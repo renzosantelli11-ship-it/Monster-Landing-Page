@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Saira+Stencil+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+}
+body {
+    background-color: #0b0b0b;
+    color: #fff;
+    overflow-x: hidden;
+}
+h1, h2, .titulo-sabor {
+    font-family: "Metal Mania", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hero-container {
+   position: relative;
+   width: 100vw;
+   min-height: 100vh; 
+   background-color: #0B0B0B;
+   transform: translateY(-10px);
+}
+.smoke-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+.smoke {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh; 
+    overflow: hidden; 
+    z-index: 1;
+}
+.unleash {
+    position: absolute;
+    top: 5%; /* Ajusta la altura sobre el drip */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Metal Mania', cursive;
+    font-size: 120px;
+    color: #000;
+    z-index: 2; /* Por encima del fondo drip */
+    text-transform: uppercase;
+}
+.monster {
+    position: absolute;
+    top: 87%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Metal Mania', cursive;
+    font-size: 150px;
+    color: #39FF14;
+    margin: 0;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 25px rgba(57, 255, 20, 0.6);
+}
+.the-left, .the-right {
+    position: absolute;
+    top: 53%; 
+    transform: translateY(-50%);
+    font-family: 'Metal Mania', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    z-index: 2;
+}
+.the-left {
+    left: 35%;
+}
+.the-right {
+    right: 35%;
+}
+.center-stage {
+   position: absolute;
+    top: 55%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+}
+.monster-foto {
+    width: 280px;
+    height: auto;
+    z-index: 2;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6)); /* Sombra para darle peso físico */
+}
+.base {
+    width: 360px;
+    height: auto;
+    margin-top: -140px; 
+    z-index: 1;
+}
+.flavours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.flavour-cajas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.caja-flavour1 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.caja-flavour2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.cajas {
+    border: 6px solid #39FF14;
+    border-radius: 6px;
+    padding: 10px;
+    width: 200px;
+    height: 135px;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+}
+.flavour-cajas img {
+    width: 125px;
+    max-width: 100%;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.flavour-cajas a {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.25s ease;
+}
+.flavour-cajas a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+.titulo-flavour {
+    border: 6px solid #7a7f86;
+    border-radius: 6px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.sabores {
+    background: linear-gradient(180deg, #0B0B0B 3%, #282727 100%);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+.header-sabores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.titulo-sabor {
+    font-size: 70px;
+}
+.foto-sabor img {
+    object-fit: contain;
+    height: 450px;
+    padding-left: 40px;
+}
+.info-sabor {
+    margin-top: 40px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.descripcion {
+    margin-bottom: 30px;
+}
+.lista-sabor {
+    margin-bottom: 30px;
+}
+footer {
+    margin-top: 30px;
+    background-color: #282727;
+    text-align: center;
+    padding: 15px;
+}
